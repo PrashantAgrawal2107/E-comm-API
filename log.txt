@@ -1,0 +1,11 @@
+Thu Jan 11 2024 23:30:54 GMT+0530 (India Standard Time).log.Data: [object Object]
+ Thu Jan 11 2024 23:36:23 GMT+0530 (India Standard Time) - "Log Data: " + /api/users/signin - {"email":"customer@ecom.com","password":"Password1"}
+ Thu Jan 11 2024 23:37:39 GMT+0530 (India Standard Time) -  /api/users/signin - {"email":"customer@ecom.com","password":"Password1"}
+Thu Jan 11 2024 23:38:19 GMT+0530 (India Standard Time) -  /api/users/signin - {"email":"customer@ecom.com","password":"Password1"}
+Thu Jan 11 2024 23:38:39 GMT+0530 (India Standard Time) -  /api/cart - {}
+Thu Jan 11 2024 23:38:55 GMT+0530 (India Standard Time) -  /api/products - {}
+Thu Jan 11 2024 23:38:58 GMT+0530 (India Standard Time) -  /api/products/rate?userID=1&productID=2&rating=65 - {}
+Thu Jan 11 2024 23:39:16 GMT+0530 (India Standard Time) -  /api/products/rate?userID=1&productID=2&rating=65 - {}
+Thu Jan 11 2024 23:41:40 GMT+0530 (India Standard Time) -  /api/users/signin - {"email":"customer@ecom.com","password":"Password1"}
+Thu Jan 11 2024 23:42:12 GMT+0530 (India Standard Time) -  /api/products/rate?userID=1&productID=2&rating=65 - {}
+Fri Jan 12 2024 00:42:03 GMT+0530 (India Standard Time) -  /api/products - undefined

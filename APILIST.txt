@@ -1,0 +1,34 @@
+//1. User Controller-->>
+Sign up - (Email ,Name ,Password ,TypeOfUser(Customer or Seller)) - Done.
+Sign in - (Email , Password) - Done.
+
+
+// Following APIs needs Authentication-->>-->>>>>>>
+
+//2. ProductController-->>
+Get Products - Done.
+Add a product - Done.
+Get one product - Done.
+Filter Product - Done.
+Rate Product - Done.
+
+//3.  Cart Controller-->>
+Add items to cart - Done.
+Get items of cart - Done.
+Remove items of cart - Done.
+
+// Sequence of things done in this REST API PROJECT -->>
+
+Folder Structure
+Route configuration
+Creating APIs
+Different API Methods
+Middlewares
+Route parameters
+Query parameters
+Testing api using postman
+Securing Api using jwt token
+Documenting API using using swagger
+CORS
+Logging
+Error Handling
