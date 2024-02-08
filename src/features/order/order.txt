@@ -1,0 +1,15 @@
+Place Order -->>
+
+1. Get cart items of user, calulcate the totalAmount.
+2. Create a record for order.
+3. Reduce the stock(products quantity).
+4. Clear the cart.
+
+// The above operations should be performed as a transaction....either all should be performed or none.
+
+
+// We are not going to perform following operations but these are performed in E-Comm Applications-->>
+
+5. Deduct the payment.
+6. Inform to sellers.
+7. Inform to courier.

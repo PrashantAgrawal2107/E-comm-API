@@ -1,0 +1,36 @@
+// Some mongodb operations -->>
+
+1. Find the average rating of a product -->>
+
+db.products.aggregate([
+    // 1. Create documents for ratings
+    {
+        $unwind:"$ratings"
+    },
+    // 2. Group rating per product and get average
+    {
+        $group:{
+            _id: "$name",
+            averageRating:{$avg:"$ratings.rating"}
+        }
+    }
+])
+
+2. Project name and ratings of product with highest count of ratings -->>
+
+db.products.aggregate([
+    {
+         // Stage 1. Project name of product and countOfRating
+            $project:{name:1, countOfRating:{
+            $cond:{if:{$isArray:"$ratings"}
+            ,then:{$size:"$ratings"}, else:0}}}
+    },
+    {
+        // Stage 2: Sort the collection in decreasing order
+        $sort:{countOfRating:-1}
+    },
+    {
+        // Stage 3. Limit to just 1 item in result
+        $limit:1
+    }
+])

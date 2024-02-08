@@ -10,6 +10,9 @@ const storage = multer.diskStorage({
     filename:(req, file, cb)=>{
         cb(null, new Date().toISOString() + file.originalname);
     },
+    // limits: {
+    //     fileSize: 1000000,
+    //   }
 });
 
 export const upload = multer({

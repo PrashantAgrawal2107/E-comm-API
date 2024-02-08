@@ -1,3 +1,4 @@
+import jwtAuth from '../../middlewares/jwt.middleware.js';
 // Manage routes/paths to UserController
 
 // 1. Import express.
@@ -11,7 +12,13 @@ const userController = new UserController();
 
 // All the paths to controller methods.
 
-userRouter.post('/signup', userController.signUp);
-userRouter.post('/signin', userController.signIn);
-
+userRouter.post('/signup', (req,res,next)=>{
+    userController.signUp(req,res,next);
+});
+userRouter.post('/signin', (req,res)=>{
+    userController.signIn(req,res);
+});
+userRouter.put('/resetPassword', jwtAuth, (req, res)=>{
+    userController.resetPassword(req, res);
+});
 export default userRouter;

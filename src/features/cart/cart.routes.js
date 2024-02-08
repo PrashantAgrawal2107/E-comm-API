@@ -8,8 +8,14 @@ const cartController = new CartController();
 
 // All the paths to the controller methods.
 // localhost/api/cart
-cartRouter.post('/',cartController.add);
-cartRouter.get('/',cartController.get);
-cartRouter.delete('/:id',cartController.delete);
+cartRouter.post('/',(req,res)=>{
+    cartController.add(req,res)
+});
+cartRouter.get('/',(req,res)=>{
+    cartController.get(req,res)
+});
+cartRouter.delete('/:id',(req,res)=>{
+    cartController.delete(req,res)
+});
 
 export default cartRouter;
