@@ -21,7 +21,7 @@ export default class ProductRepository{
     async add(productData){
         try{
             // 1. Adding Product-->>
-            productData.categories=productData.category.split(',');
+            // productData.categories=productData.category.split(',');
             console.log(productData);
             const newProduct = new ProductModel(productData);
             const savedProduct = await newProduct.save(); 
@@ -46,9 +46,9 @@ export default class ProductRepository{
 
     async getAll(){
         try{
-            const db = getDB();
-            const collection = db.collection(this.collection);
-            const products = await collection.find().toArray();
+            // const db = getDB();
+            // const collection = db.collection(this.collection);
+            const products = await ProductModel.find();
             console.log(products);
             return products;
         }catch(err){
@@ -61,9 +61,9 @@ export default class ProductRepository{
     async get(id){
         // console.log("Get executed"); // Applied check becoz of filterproducts route error 
         try{
-            const db = getDB();
-            const collection = db.collection(this.collection);
-            return await collection.findOne({_id: new ObjectId(id)});
+            // const db = getDB();
+            // const collection = db.collection(this.collection);
+            return await ProductModel.findOne({_id: new ObjectId(id)});
         }catch(err){
             console.log(err);
             errorHandlerMiddleware(err);
