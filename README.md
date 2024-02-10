@@ -19,3 +19,18 @@ This project included following steps -->>
 13. Error Handling
 
 ......Further I will learn databases.....stay tuned for other updates..........
+
+Hey Guyz.... I have added MongoDB and Mongoose to these APIs . Now this project can work with databases.
+
+This included -->>
+1. Connecting to mongoDB
+2. Creating repository files for all the previous features to perform Mongodb operations.
+3. Performed various MongoDB operations
+4. Hashing passwords using bcrypt
+5. Setting environment variables using dotenv
+6. Indexes in MongoDB
+7. Created order feature...performed mongodb transactions
+8. Connecting to mongoose
+9. Creating schemas and understanding validations
+10. Creating Like features fro showing relationships
+11. MongoDB on Cloud
